@@ -1408,15 +1408,15 @@ body {
   width: 100%;
 }
 
-/* Align the navbar items to the left */
-.collapse {
+/* Ensure the navbar items align to the left on mobile screens */
+.collapse.navbar-collapse {
   display: flex;
-  flex-direction: column;
-  align-items: left !important; /* Aligns items to the left */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items to the start (left) */
   width: 100%; /* Make sure it stretches full width */
 }
 
-/* Add padding to each nav item */
+/* Add padding to each nav item for mobile */
 .navbar-nav .nav-item {
   padding: 10px 0; /* Vertical padding for space between items */
 }
@@ -1428,11 +1428,10 @@ body {
 
 /* Responsive Design for larger screens */
 @media (min-width: 992px) {
-  .collapse {
+  .collapse.navbar-collapse {
     flex-direction: row; /* Align items horizontally on larger screens */
+    justify-content: flex-start; /* Align items to the start (left) */
     align-items: center; /* Center align items vertically */
-    align-items: left !important; /* Aligns items to the left */
-    width: 100%; /* Ensure it stretches full width */
   }
 
   .navbar-nav {
