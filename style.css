@@ -1366,3 +1366,90 @@ body {
   height: auto;
 }
 
+ 
+
+
+/* Theme Switcher and Navbar Toggler Alignment */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Aligns the theme switcher to the left */
+}
+
+.theme-switch__container {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch__circle-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Space between the switch and navbar toggler */
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url('path/to/your/icon.svg'); /* Custom icon */
+}
+
+/* Navbar Links Alignment */
+/* Ensure the navbar is full-width */
+.navbar {
+  width: 100%;
+}
+
+/* Align the navbar items to the left */
+.collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: left !important; /* Aligns items to the left */
+  width: 100%; /* Make sure it stretches full width */
+}
+
+/* Add padding to each nav item */
+.navbar-nav .nav-item {
+  padding: 10px 0; /* Vertical padding for space between items */
+}
+
+/* Add padding around the buttons */
+.navbar-nav .nav-item .btn {
+  padding: 10px 20px; /* Adjust padding as needed for the buttons */
+}
+
+/* Responsive Design for larger screens */
+@media (min-width: 992px) {
+  .collapse {
+    flex-direction: row; /* Align items horizontally on larger screens */
+    align-items: center; /* Center align items vertically */
+    align-items: left !important; /* Aligns items to the left */
+    width: 100%; /* Ensure it stretches full width */
+  }
+
+  .navbar-nav {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+
+  .navbar-nav .nav-item {
+    padding: 0; /* Remove padding for horizontal layout */
+    margin-right: 20px; /* Adds spacing between items on larger screens */
+  }
+
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+
+  .navbar-nav .nav-item .btn {
+    padding: 10px 20px; /* Adjust padding as needed for the buttons */
+  }
+}
