@@ -1452,3 +1452,11 @@ body {
     padding: 10px 20px; /* Adjust padding as needed for the buttons */
   }
 }
+
+@media (max-width: 991.98px) {
+  .mobile-left {
+      margin-left: 0;
+      margin-right: auto;
+      text-align: left;
+  }
+}
