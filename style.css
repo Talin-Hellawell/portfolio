@@ -1369,13 +1369,19 @@ body {
  
 
 
-/* Theme Switcher and Navbar Toggler Alignment */
+/* Theme Switcher and Navbar Toggler Alignment *//* Ensure the navbar is full-width */
+.navbar {
+  width: 100%;
+}
+
+/* Navbar Container Alignment */
 .navbar .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between theme switcher and navbar items */
   align-items: center;
 }
 
+/* Theme Switcher Alignment */
 .theme-switch {
   display: flex;
   align-items: center;
@@ -1393,6 +1399,7 @@ body {
   margin-left: 10px; /* Space between the switch and navbar toggler */
 }
 
+/* Navbar Toggler */
 .navbar-toggler {
   border: none;
   background: transparent;
@@ -1403,12 +1410,6 @@ body {
 }
 
 /* Navbar Links Alignment */
-/* Ensure the navbar is full-width */
-.navbar {
-  width: 100%;
-}
-
-/* Ensure the navbar items align to the left on mobile screens */
 .collapse.navbar-collapse {
   display: flex;
   flex-direction: column; /* Stack items vertically */
@@ -1419,6 +1420,7 @@ body {
 /* Add padding to each nav item for mobile */
 .navbar-nav .nav-item {
   padding: 10px 0; /* Vertical padding for space between items */
+  margin-right: 0; /* Remove horizontal margin */
 }
 
 /* Add padding around the buttons */
@@ -1430,7 +1432,7 @@ body {
 @media (min-width: 992px) {
   .collapse.navbar-collapse {
     flex-direction: row; /* Align items horizontally on larger screens */
-    justify-content: flex-start; /* Align items to the start (left) */
+    justify-content: flex-end; /* Align items to the end (right) */
     align-items: center; /* Center align items vertically */
   }
 
@@ -1455,8 +1457,8 @@ body {
 
 @media (max-width: 991.98px) {
   .mobile-left {
-      margin-left: 0;
-      margin-right: auto;
-      text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
   }
 }
