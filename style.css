@@ -576,10 +576,11 @@ body {
 .nav-link {
   color: white !important;
   font-weight: bold !important;
-  font-size: larger !important;
+  font-size: 1.7rem !important;
   text-align: right !important;
-  margin-bottom: -30px !important;
+  line-height: 5px !important;
 }
+
 
 /* Responsive Design for larger screens */
 @media (min-width: 992px) {
@@ -588,7 +589,6 @@ body {
   .navbar-nav .nav-item {
     padding: 0; /* Remove padding for horizontal layout */
     margin-right: 6px; /* Adds spacing between items on larger screens */
-    margin-bottom: 30px;
   }
 
   .navbar-nav .nav-item:last-child {
