@@ -399,16 +399,7 @@ body {
     text-align: center;
 }
 
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+
 
 /* Remove this class definition */
 .show {
@@ -571,8 +562,8 @@ body {
 /* Navbar Links Alignment */
 .collapse.navbar-collapse {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: flex-start; /* Align items to the start (left) */
+  flex-direction: row; /* Stack items vertically */
+  justify-content: end; /* Align items to the start (left) */
   width: 100%; /* Make sure it stretches full width */
 }
 
@@ -582,32 +573,28 @@ body {
   margin-right: 0; /* Remove horizontal margin */
 }
 
-/* Add padding around the buttons */
-.navbar-nav .nav-item .btn {
-  padding: 10px 20px; /* Adjust padding as needed for the buttons */
+.nav-link {
+  color: white !important;
+  font-weight: bold !important;
+  font-size: larger !important;
+  text-align: right !important;
+  margin-bottom: -30px !important;
 }
 
 /* Responsive Design for larger screens */
 @media (min-width: 992px) {
-  .collapse.navbar-collapse {
-    flex-direction: row; /* Align items horizontally on larger screens */
-    justify-content: flex-end; /* Align items to the end (right) */
-    align-items: center; /* Center align items vertically */
-  }
 
-  .navbar-nav {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-  }
 
   .navbar-nav .nav-item {
     padding: 0; /* Remove padding for horizontal layout */
-    margin-right: 20px; /* Adds spacing between items on larger screens */
+    margin-right: 6px; /* Adds spacing between items on larger screens */
+    margin-bottom: 30px;
   }
 
   .navbar-nav .nav-item:last-child {
     margin-right: 0;
   }
+
 
   .navbar-nav .nav-item .btn {
     padding: 10px 20px; /* Adjust padding as needed for the buttons */
@@ -616,8 +603,16 @@ body {
 
 @media (max-width: 991.98px) {
   .mobile-left {
-    margin-left: 0;
-    margin-right: auto;
-    text-align: left;
+      margin-left: 0;
+      margin-right: auto;
+      text-align: left;
   }
+}
+
+.container-nav {
+  display: flexbox !important;
+  justify-content: space-between !important;
+  align-items: end !important;
+  
+
 }
